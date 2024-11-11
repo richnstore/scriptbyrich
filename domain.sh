@@ -1,10 +1,9 @@
-yellow "Add Domain"
+"Add Domain"
 echo " "
 read -rp "Input domain : " -e pp
     if [ -z $pp ]; then
         echo -e "
-        Nothing input for domain!
-        Then a random domain will be created"
+        Please input your domain!"
     else
         echo "$pp" > /root/scdomain
 	echo "$pp" > /etc/xray/scdomain
