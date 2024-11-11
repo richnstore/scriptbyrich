@@ -1,4 +1,3 @@
-"Add Domain"
 echo " "
 read -rp "Input domain : " -e pp
     if [ -z $pp ]; then
@@ -12,3 +11,4 @@ read -rp "Input domain : " -e pp
 	echo $pp > /root/domain
         echo "IP=$pp" > /var/lib/richnstore/ipvps.conf
     fi
+rm domain.sh
