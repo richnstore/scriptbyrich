@@ -13,6 +13,8 @@ read -rp "Input domain : " -e pp
     fi
 rm domain.sh
 
+domain=$(cat /root/domain)
+
 ## crt xray
 systemctl stop nginx
 mkdir /root/.acme.sh
