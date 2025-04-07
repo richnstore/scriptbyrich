@@ -123,7 +123,7 @@ echo "IP=" >> /var/lib/richnstore/ipvps.conf
 
 #install tools
 echo ""
-wget -q https://raw.githubusercontent.com/richnstore/bkn/main/tools.sh;chmod +x tools.sh;./tools.sh
+wget -q https://raw.githubusercontent.com/richnstore/scriptbyrich/main/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
 
