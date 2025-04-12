@@ -245,9 +245,6 @@ chmod +x /etc/issue.net
 echo "Banner /etc/issue.net" >> /etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 
-#install bbr dan optimasi kernel
-wget https://raw.githubusercontent.com/richnstore/scriptbyrich/main/installssh/bbr.sh && chmod +x bbr.sh && ./bbr.sh
-
 # blockir torrent
 iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
 iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
