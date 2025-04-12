@@ -174,8 +174,7 @@ echo -e "$green          Install SSH UDP              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget -q https://lite.scvps.biz.id/rabah/udp-custom.sh &&  chmod +x udp-custom.sh && ./udp-custom.sh
-rm /root/udp-custom.sh
+wget "https://raw.githubusercontent.com/Haris131/UDP-Custom/main/udp-custom.sh" -O install-udp && chmod +x install-udp && ./install-udp
 clear
 
 # notif
