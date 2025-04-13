@@ -262,8 +262,6 @@ iptables -A FORWARD -m string --algo bm --string "announce" -j DROP
 iptables -A FORWARD -m string --algo bm --string "info_hash" -j DROP
 iptables-save > /etc/iptables.up.rules
 iptables-restore -t < /etc/iptables.up.rules
-service netfilter-persistent save
-service netfilter-persistent reload
 
 cd
 
