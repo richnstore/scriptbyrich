@@ -177,6 +177,9 @@ clear
 wget -q https://raw.githubusercontent.com/richnstore/UDP-Custom/main/udp-custom.sh && chmod +x udp-custom.sh && ./udp-custom.sh
 clear
 
+netfilter-persistent save
+netfilter-persistent start
+
 # notif
 wget -q https://raw.githubusercontent.com/richnstore/scriptbyrich/main/notif/richnstore && chmod +x richnstore && ./richnstore
 rm /root/richnstore
